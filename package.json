@@ -1,0 +1,14 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "e-commerce with MERN",
+  "main": "server-build/index.js",
+  "repository": "https://github.com/DannZzz/e-commerce",
+  "author": "Dann",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "install:all": "yarn install && yarn --cwd client install ",
+    "client": "yarn --cwd client start"
+  }
+}

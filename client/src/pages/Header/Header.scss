@@ -1,0 +1,33 @@
+@import "../../style-config/vars.scss";
+
+.main-header {
+  height: 75px;
+  border-bottom: 1px solid $white-1;
+  border-bottom-style: double;
+  box-shadow: 1px 1px 1px 1px $white-1;
+
+  padding: 0 calc(50% - $content-width);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+
+  .header-element {
+    &:not(.home-icon) {
+      border: 0.5px solid $white-1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+    }
+
+    &.home-icon {
+      flex: 1;
+    }
+
+    &-content {
+      color: $text-color-basic;
+    }
+  }
+}

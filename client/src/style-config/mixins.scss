@@ -1,0 +1,15 @@
+@import "vars.scss";
+
+@mixin no-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin special-font {
+  font-family: "Righteous", cursive;
+}
+
+@mixin default-half-padding {
+  padding: 0 calc(50% - $content-width);
+}

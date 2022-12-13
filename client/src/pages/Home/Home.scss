@@ -1,0 +1,14 @@
+@import "../../style-config/mixins.scss";
+@import "../../style-config/vars.scss";
+
+.home {
+  margin-top: 50px;
+
+  @include default-half-padding;
+
+  &-content {
+    color: $text-color-basic;
+
+    border: 1px solid $white-1;
+  }
+}

@@ -1,4 +1,5 @@
 @import "../../style-config/vars.scss";
+@import "../../style-config/mixins.scss";
 
 .main-header {
   height: 75px;
@@ -6,20 +7,36 @@
   border-bottom-style: double;
   box-shadow: 1px 1px 1px 1px $white-1;
 
-  padding: 0 calc(50% - $content-width);
-
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   gap: 30px;
 
+  @include no-select;
+  @include special-font;
+  @include default-half-padding;
+
   .header-element {
     &:not(.home-icon) {
       border: 0.5px solid $white-1;
+      border-radius: 15px;
+
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 10px 20px;
+      cursor: pointer;
+
+      transition-property: background, color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+      &:hover {
+        background: $white-1;
+
+        .header-element-content {
+          color: $bg-app-1;
+        }
+      }
     }
 
     &.home-icon {
@@ -27,6 +44,7 @@
     }
 
     &-content {
+      letter-spacing: 1px;
       color: $text-color-basic;
     }
   }

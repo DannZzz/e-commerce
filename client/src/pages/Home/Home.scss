@@ -5,10 +5,12 @@
   margin-top: 50px;
 
   @include default-half-padding;
+  position: relative;
 
   &-content {
     color: $text-color-basic;
+    padding: 10px;
 
-    border: 1px solid $white-1;
+    border: 1px solid $special-color;
   }
 }

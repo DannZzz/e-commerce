@@ -3,9 +3,9 @@
 
 .main-header {
   height: 75px;
-  border-bottom: 1px solid $white-1;
+  border-bottom: 1px solid $special-color;
   border-bottom-style: double;
-  box-shadow: 1px 1px 1px 1px $white-1;
+  box-shadow: 3px 5px 10px 1px lighten($special-color, 30%);
 
   display: flex;
   align-items: center;
@@ -16,31 +16,34 @@
   @include special-font;
   @include default-half-padding;
 
+  @include tablet-landscape-app {
+    padding: 0 20px;
+  }
+
+  @include tablet-portrait-app {
+    padding: 0 20px;
+  }
+
+  @include mobile-app {
+    padding: 0 20px;
+  }
+
   .header-element {
+    // &:first-child {
+    //   margin-left: 10px;
+    // }
+
     &:not(.home-icon) {
-      border: 0.5px solid $white-1;
-      border-radius: 15px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 20px;
-      cursor: pointer;
-
-      transition-property: background, color;
-      transition-duration: 0.3s;
-      transition-timing-function: ease-in-out;
-      &:hover {
-        background: $white-1;
-
-        .header-element-content {
-          color: $bg-app-1;
-        }
-      }
+      @include special-link-button;
     }
 
     &.home-icon {
       flex: 1;
+      span {
+        cursor: pointer;
+        font-size: 50px;
+        color: $special-color;
+      }
     }
 
     &-content {

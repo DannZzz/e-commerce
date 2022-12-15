@@ -1,0 +1,30 @@
+@import "../../style-config/vars.scss";
+@import "../../style-config/mixins.scss";
+
+.main-footer {
+  height: 75px;
+  border-top: 1px solid $special-color;
+  border-top-style: double;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+
+  @include no-select;
+  @include special-font;
+  //   @include default-half-padding;
+
+  .footer-element {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../../style-config/mixins.scss";
+
+.main-special-feed {
+  max-height: 500px;
+
+  background: lighten($special-color, 50%);
+
+  .special-product-slide {
+    .special-product-slide-container {
+      height: 500px;
+      position: relative;
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 50%);
+      grid-gap: 10px;
+      overflow: scroll;
+
+      @include tablet-landscape-app {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 50%);
+      }
+    }
+  }
+}

@@ -13,3 +13,51 @@
 @mixin default-half-padding {
   padding: 0 calc(50% - $content-width);
 }
+
+@mixin special-link-button($paddingVertical: 10px) {
+  border: 0.5px solid $text-color-basic;
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $paddingVertical $paddingVertical * 2;
+  cursor: pointer;
+
+  transition-property: background, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  &:hover {
+    background: $text-color-basic;
+
+    .header-element-content {
+      color: $bg-app;
+    }
+  }
+}
+
+@mixin mobile-app {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin tablet-portrait-app {
+  @media (min-width: 600px) and (max-width: 899px) {
+    @content;
+  }
+}
+@mixin tablet-landscape-app {
+  @media (min-width: 900px) and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin desktop--app {
+  @media (min-width: 1200px) and (max-width: 1799px) {
+    @content;
+  }
+}
+@mixin big-desktop--app {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}

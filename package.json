@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "start": "yarn client",
     "install:all": "yarn install && yarn --cwd client install ",
     "client": "yarn --cwd client start"
   }

@@ -32,6 +32,7 @@ const SpecialFeed = () => {
   }, [])
   return (
     <div className="main-special-feed">
+      {/* // Carousel (Antd) )) */}
       <Carousel autoplay autoplaySpeed={10000}>
         {sortedProducts.map((arr, i) => (
           <div className="special-product-slide" key={i + ""}>

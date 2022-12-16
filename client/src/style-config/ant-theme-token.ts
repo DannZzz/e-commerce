@@ -1,8 +1,9 @@
-import { theme } from "antd";
+import { theme } from "antd"
 
-const { defaultAlgorithm, defaultSeed } = theme;
+const { defaultAlgorithm, defaultSeed } = theme
 
 export const AntdThemeToken = defaultAlgorithm({
   ...defaultSeed,
-  colorPrimary: "#252525",
-});
+  colorPrimary: "#9a2f43",
+  colorTextBase: "#9a2f43",
+})

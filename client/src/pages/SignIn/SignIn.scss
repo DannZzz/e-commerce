@@ -1,0 +1,47 @@
+@import "../../style-config/mixins.scss";
+@import "../../style-config/vars.scss";
+// chat@ nayi
+.main-sign-in {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include default-half-padding;
+
+  .sign-in-form {
+    width: 30%;
+    position: relative;
+    background-color: $secondary-color;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    filter: drop-shadow(3px 3px 5px darken($secondary-color, 30%));
+
+    label {
+      color: $text-color-basic;
+    }
+
+    .title {
+      font-size: 48px;
+      color: $special-color;
+      @include special-font;
+    }
+
+    .button-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .register {
+      color: $text-color-basic;
+
+      &-link {
+        color: $special-color;
+        @include special-font;
+        font-weight: bolder;
+      }
+    }
+  }
+}

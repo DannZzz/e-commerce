@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { useFetch } from "../../../hooks/useFetch"
+import ProductCard from "../../../shared/ProductCard/ProductCard"
 import "./Feed.scss"
 
 const Feed = () => {
@@ -12,7 +13,13 @@ const Feed = () => {
     })
   }, [])
 
-  return <div>Hello</div>
+  return (
+    <div className="main-feed">
+      {products.map((product) => (
+        <ProductCard key={product.id} product={product} size={250} />
+      ))}
+    </div>
+  )
 }
 
 export default Feed

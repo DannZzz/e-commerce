@@ -822,6 +822,15 @@
     consola "^2.15.0"
     node-fetch "^2.6.1"
 
+"@onlydann/database@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@onlydann/database/-/database-1.0.0.tgz#6797ccd6742a09315d859459b0498e7799727da5"
+  integrity sha512-WHV4vA9OmMwsD5c9LVzFtqghO2MKLO5vaDnkdTk8YXb6rxklow58IdJSPdE9TNCA1k9A8e7UP9ftgp01Op98gA==
+  dependencies:
+    anytool "^1.0.2"
+    crypto-js "^4.1.1"
+    type-check "^0.4.0"
+
 "@prisma/prisma-fmt-wasm@4.4.0-66.f352a33b70356f46311da8b00d83386dd9f145d6":
   version "4.4.0-66.f352a33b70356f46311da8b00d83386dd9f145d6"
   resolved "https://registry.yarnpkg.com/@prisma/prisma-fmt-wasm/-/prisma-fmt-wasm-4.4.0-66.f352a33b70356f46311da8b00d83386dd9f145d6.tgz#d0ab2f4bac76da2767e242ced74b4257e839befe"
@@ -1509,6 +1518,11 @@ anymatch@^3.0.3, anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
+anytool@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/anytool/-/anytool-1.0.2.tgz#adad06267b5e68d597f93a3a3733ee86b877d84a"
+  integrity sha512-VvdX3aeYArOWZcOFJYD5RuX+bcUWt0zQ/PF7SVfLGCjkgeRUFdfXQVg3UNx+sVRJHpJOqzHrGJasIal0WLCMbA==
+
 app-root-path@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/app-root-path/-/app-root-path-3.1.0.tgz#5971a2fc12ba170369a7a1ef018c71e6e47c2e86"
@@ -2122,6 +2136,11 @@ cross-spawn@^7.0.0, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     path-key "^3.1.0"
     shebang-command "^2.0.0"
     which "^2.0.1"
+
+crypto-js@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-4.1.1.tgz#9e485bcf03521041bd85844786b83fb7619736cf"
+  integrity sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==
 
 date-fns@^2.28.0, date-fns@^2.29.1:
   version "2.29.3"
